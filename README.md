@@ -18,6 +18,15 @@ Plain HTML/CSS/JS with no build step and no framework. Open `index.html` in a br
 
 GSAP 3.15 (with ScrollTrigger) and Lenis 1.3 are bundled in `web/vendor/`, so the page needs no CDN. GSAP uses its own free "Standard no-charge" license; Lenis is MIT. A screen recording is at `docs/web-demo.mp4`.
 
+## Online (GitHub Pages)
+
+The repo is published as a static site, with no build step:
+
+- Info terminal: https://makemecodeclaude.github.io/luks/
+- Website: https://makemecodeclaude.github.io/luks/web/
+
+To set it up once: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, then choose branch `claude/luks-digital-info-terminal-0n2ejk` and folder `/ (root)`. The `.nojekyll` file makes GitHub serve the files as they are.
+
 ## Screens
 
 | # | Route | Content |
