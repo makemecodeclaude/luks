@@ -1,7 +1,22 @@
 # LUKS Digitales Informationszentrum
 
-Touch information terminal for the **Luzerner Kantonsspital, Standort Luzern**.
+Touch information terminal (`index.html`) and companion website (`web/`) for the **Luzerner Kantonsspital, Standort Luzern**.
 Plain HTML/CSS/JS with no build step and no framework. Open `index.html` in a browser, or run it in Chrome kiosk mode.
+
+## Website (`web/`)
+
+`web/index.html` is a scrolling website version, separate from the kiosk, styled after the Dantora reference video. It reuses the kiosk's data, translations, icons and area plan.
+
+- **Loader:** a teal panel with a spinning logo ring and a percentage counter, which wipes up to reveal the page. It is shown once per visit.
+- **Hero:** a stippled 3D DNA helix (up to 34,000 dots, perspective and depth shading) that turns with the mouse and the scroll position, then fades out.
+- **Motion:** smooth scrolling (Lenis). Headlines come into focus word by word (blur to sharp). The six service cards (01–06) sit in a row that is pinned and slides sideways as you scroll, with a parallax visual inside each card. Check-in steps draw a progress line, and the numbers count up.
+- **Map:** the area plan with category filters. Selecting a place animates a zoom to it, draws the route from the main entrance and shows an info card. On phones the map scrolls sideways.
+- **Restaurants:** each restaurant has a QR code for its luks.ch menu page. Search uses the kiosk's typo-tolerant matching.
+- **Help section:** a navy panel with an animated constellation background and the phone number.
+- **Languages:** DE, FR, IT, RM and EN (`?lang=fr`). The browser language is used by default.
+- **Reduced motion:** with "reduce motion" turned on, smooth scroll, pinning and animations are switched off, and all content shows immediately.
+
+GSAP 3.15 (with ScrollTrigger) and Lenis 1.3 are bundled in `web/vendor/`, so the page needs no CDN. GSAP uses its own free "Standard no-charge" license; Lenis is MIT. A screen recording is at `docs/web-demo.mp4`.
 
 ## Screens
 
